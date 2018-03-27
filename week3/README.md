@@ -382,4 +382,5 @@ public class game : MonoBehaviour
 https://pan.baidu.com/s/1mw_zM5PC6OBg-9rj6SUafA
 
 视频超过了25m，上传到了百度网盘
-
+此外本文发表到csdn博客
+地址 https://blog.csdn.net/sysu997wang/article/details/79696637
