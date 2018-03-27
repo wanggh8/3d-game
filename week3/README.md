@@ -228,3 +228,153 @@ public class behavior : MonoBehaviour
 控制台输出结果
 
 ![结果](https://img-blog.csdn.net/20180326194757242?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5c3U5OTd3YW5n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+## 编程实践
+### 代码实现
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class game : MonoBehaviour
+{
+
+    private int[] array;
+    private int turn;
+    //存储玩家
+    private string result;
+    private int res;
+    //存储结果
+    void Start()
+    {
+        reset();
+    }
+    void reset()//初始化
+    {
+        array = new int[9];
+        turn = 1;
+        res = 0;
+        for (int i = 0; i < 9; i++)
+        {
+            array[i] = 0;
+        }
+    }
+    // Update is called once per frame
+    void Update()//判断结果
+    {
+        if (res == 0)
+        {
+            result = "";
+        }
+        if (res == 1)
+        {
+            result = "play1 win!!!";
+        }
+        if (res == -1)
+        {
+            result = "play2 win!!!";
+        }
+        if (res == 2)
+        {
+            result = "dead game!";
+        }
+    }
+    void LateUpdate()
+    {
+        res = isWin();
+    }
+
+    void OnGUI()//UI实现
+    {
+        GUI.BeginGroup(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 150, 300, 300));
+        GUI.Box(new Rect(0, 0, 300, 300), icon1);
+        if (res != 0)
+        {
+            GUIStyle style = GUI.skin.GetStyle("label");
+            style.normal.textColor = new Color(1, 0, 0);
+            style.fontSize = 42;
+            GUI.Label(new Rect(40, 50, 220, 200), result);
+
+            if (GUI.Button(new Rect(90, 190, 120, 40), "restart game"))
+            {
+                reset();
+            }
+        }
+        else
+        {
+            for (int i = 0; i <= 2; i = i + 1)
+            {
+                for (int t = 0; t <= 2; t++)
+                {
+                    if (array[i * 3 + t] == 0)
+                    {
+                        if (GUI.Button(new Rect(20 + t * 90, i * 90, 80, 80), ""))
+                        {
+                            array[i * 3 + t] = turn;
+                            turn = 0 - turn;
+                        }
+                    }
+                    if (array[i * 3 + t] == 1)
+                    {
+                        GUI.Button(new Rect(20 + t * 90, i * 90, 80, 80), "X");
+                    }
+                    if (array[i * 3 + t] == -1)
+                    {
+                        GUI.Button(new Rect(20 + t * 90, i * 90, 80, 80), "O");
+                    }
+                }
+            }
+        }
+
+        GUI.EndGroup();
+    }
+    private int isWin()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if (array[0 + i * 3] == 1 && array[1 + i * 3] == 1 && array[2 + i * 3] == 1)
+            {
+                return 1;
+            }
+            if (array[0 + i * 3] == -1 && array[1 + i * 3] == -1 && array[2 + i * 3] == -1)
+            {
+                return -1;
+            }
+            if (array[0 + i] == 1 && array[3 + i] == 1 && array[6 + i] == 1)
+            {
+                return 1;
+            }
+            if (array[0 + i] == -1 && array[3 + i] == -1 && array[6 + i] == -1)
+            {
+                return -1;
+            }
+        }
+        if (array[0] == 1 && array[4] == 1 && array[8] == 1)
+        {
+            return 1;
+        }
+        if (array[0] == -1 && array[4] == -1 && array[8] == -1)
+        {
+            return -1;
+        }
+        if (array[2] == 1 && array[4] == 1 && array[6] == 1)
+        {
+            return 1;
+        }
+        if (array[2] == -1 && array[4] == -1 && array[6] == -1)
+        {
+            return -1;
+        }
+        for (int i = 0; i < 9; i++)
+        {
+            if (array[i] == 0)
+            {
+                return 0;
+            }
+        }
+        return 2;
+    }
+}
+
+```
+
