@@ -867,4 +867,6 @@ public class View : MonoBehaviour
 }
 
 ```
-
+#### 演示视频链接
+已上传腾讯视频
+<embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=y06218hp78u&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
