@@ -867,6 +867,10 @@ public class View : MonoBehaviour
 }
 
 ```
-#### 演示视频链接
-已上传腾讯视频
-<embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=y06218hp78u&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+# 演示视频
+[太阳系演示视频](https://v.qq.com/x/page/y0621qszc78.html?)
+https://v.qq.com/x/page/y0621qszc78.html
+
+[牧师和魔鬼演示视频](https://v.qq.com/x/page/y06218hp78u.html?)
+https://v.qq.com/x/page/y0621qszc78.html
+
