@@ -872,5 +872,7 @@ public class View : MonoBehaviour
 https://v.qq.com/x/page/y0621qszc78.html
 
 [牧师和魔鬼演示视频](https://v.qq.com/x/page/y06218hp78u.html?)
-https://v.qq.com/x/page/y0621qszc78.html
+https://v.qq.com/x/page/y06218hp78u.html
 
+本文已发表在CSDN博客
+[Week4博客](https://blog.csdn.net/sysu997wang/article/details/79794260)
