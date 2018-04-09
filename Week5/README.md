@@ -38,12 +38,7 @@
 ![11](https://img-blog.csdn.net/20180409212547196?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5c3U5OTd3YW5n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 
-
-
-
-
-
-
 ## 写一个简单的总结，总结游戏对象的使用
+
 # 编程实践
 牧师与魔鬼 动作分离版
