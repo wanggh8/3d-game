@@ -725,7 +725,8 @@ public class View : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+
+void Update()
     {
 
     }
@@ -773,5 +774,7 @@ public class View : MonoBehaviour
 [Fantasy Skybox（https://v.qq.com/x/page/r0626erlx3j.html?）](https://v.qq.com/x/page/r0626erlx3j.html?)
 
 [牧师与魔鬼动作分离版（https://v.qq.com/x/page/p0626tzb8lv.html?）](https://v.qq.com/x/page/p0626tzb8lv.html?)
+
+本文已发表在CSDN博客 [CSDN博客](https://blog.csdn.net/sysu997wang/article/details/79873001)
 
 
