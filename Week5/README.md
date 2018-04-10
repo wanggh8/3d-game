@@ -1,3 +1,4 @@
+图片因不可知原因加载不出来，看完整版可前往[CSDN博客](https://blog.csdn.net/sysu997wang/article/details/79873001)
 #  操作与总结
 ## 参考 Fantasy Skybox FREE 构建自己的游戏场景
 #### 双摄像机使用： 用来俯瞰整个地图，位于右下角
