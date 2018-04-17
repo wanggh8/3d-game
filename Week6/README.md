@@ -445,7 +445,7 @@ public class DiskFactory : System.Object
                 newDisk.GetComponent<Renderer>().material.color = Color.blue;
                 break;
             case 2:
-                float size2 = 0.8f;
+                float size2 = 0.8f
                 newDisk.transform.localScale = new Vector3(size2, size2/3, size2);
                 newDisk.GetComponent<Renderer>().material.color = Color.yellow;
                 break;
