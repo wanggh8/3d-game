@@ -472,7 +472,7 @@ public class DiskFactory : System.Object
         }
     }
 }
-[演示视频](https://v.qq.com/x/page/a06322r32m8.html?)```
+```
 UserGUI
 用户界面，与用户交互
 ```
