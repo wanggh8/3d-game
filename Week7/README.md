@@ -4,6 +4,8 @@
 按 adapter模式 设计图修改飞碟游戏
 使它同时支持物理运动与运动学（变换）运动
 
+![2](https://img-blog.csdn.net/20180424204340112?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5c3U5OTd3YW5n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 # 游戏规则
 
 一共有3个回合，每个回合有20个飞盘。飞盘的大小和移动速度会随着回合而变化，整体难度增加。在每回合中飞盘的颜色不同，击中蓝色飞盘得一分，击中黄色飞盘得两分，击中红色飞盘得三分，每回合分别得够30分、60分、90分，才能进入下个回合。在20个飞盘出现完后，如果不够要求分数则游戏失败。游戏失败后可以重新开始游戏。
@@ -606,5 +608,5 @@ public class UserGUI : MonoBehaviour
 ```
 # 游戏演示
 
-
+[演示视频](https://v.qq.com/x/page/i0637jsx9a2.html)
 
