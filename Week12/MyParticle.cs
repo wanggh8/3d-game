@@ -12,7 +12,10 @@ public class MyParticle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		RaycastHit hit;
+       		 if (Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out hit)) {
+            		exhaust.startColor =  new Color32(17, 255, 84, 255);
+       		 }	
 	}
 }
 
